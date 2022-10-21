@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Color(red: red, green: green, blue: blue)
-                .ignoresSafeArea()
+                .ignoresSafeArea(.all)
             HStack {
                 VStack(alignment: .leading){
                     Text("red \r \(red, specifier: "%.1f")")
